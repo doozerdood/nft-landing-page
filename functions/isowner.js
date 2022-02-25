@@ -31,7 +31,7 @@ exports.handler = async (event, context) => {
 }
 
 const getOwnedNfts = async (wallet, page) => {
-  const url = `https://eth-rinkeby.alchemyapi.io/v2/aA7LmeyXcEQSBaQCIQ_LoqMs32EwpxST`;
+  const url = `https://eth-rinkeby.alchemyapi.io/v2/aA7LmeyXcEQSBaQCIQ_LoqMs32EwpxST/`;
   
   const options = {
     method: 'GET',
