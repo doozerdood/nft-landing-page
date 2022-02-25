@@ -1,7 +1,6 @@
 const fetch = require('node-fetch')
 
 const CONTRACT = process.env.CONTRACT_ADDRESS;
-const AUTH = process.env.NFTPORT_AUTH;
 const chain = "rinkeby";
 const include = "metadata";
 
@@ -32,7 +31,7 @@ exports.handler = async (event, context) => {
 }
 
 const getOwnedNfts = async (wallet, page) => {
-  const url = `https://api.nftport.xyz/v0/accounts/${wallet}/?`;
+  const url = `https://eth-rinkeby.alchemyapi.io/v2/aA7LmeyXcEQSBaQCIQ_LoqMs32EwpxST`;
   
   const options = {
     method: 'GET',
