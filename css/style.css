@@ -1,18 +1,20 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); @import url("http://127.0.0.1:5500/css/fonts/stylesheet.css");
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Arvo', serif;
+  --font-primary: 'space_angel', regular;
+  --font-secondary: 'Arial', regular;
   --font-code: 'Roboto', monospace;
-  --bg-color: #00163f;
+  --bg-color: #130525;
   --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
-  --header-shadow: #000 0px 0px 5px;
+  --btn-bg-color: #232855;
+  --btn-shadow: #ffffff;
+  --accent-color: #87b911;
+  --header-shadow: rgb(255, 255, 255) 0px 0px 5px;
+  --bg-img: 
 }
 
 * {
@@ -64,12 +66,13 @@ header .container {
   background: var(--btn-bg-color);
   color: var(--accent-color);
   font-family: var(--font-secondary);
-  font-style: italic;
+  font-style: regular;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .6rem;
   text-transform: capitalize;
-  transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
+  transition: all 0.6s ease;
+  box-shadow: 0px 1px 0 0 var(--btn-shadow);
+
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -80,7 +83,7 @@ header .container {
 }
 
 .wallet-btn {
-  border-radius: 5rem;
+  border-radius: .3rem;
   margin-left: 2rem;
   border-color: transparent;
 }
@@ -107,7 +110,7 @@ section {
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 3rem
 }
 .countdown .clock-item {
   list-style: none;
@@ -141,7 +144,6 @@ section {
 }
 
 .countdown h1 {
-  text-shadow: 2px 2px 0 var(--accent-color);
   font-style: italic;
   margin: 2rem 0;
   font-size: 3.5rem;
