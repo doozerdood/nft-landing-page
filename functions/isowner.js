@@ -37,6 +37,7 @@ const getOwnedNfts = async (wallet, page) => {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
+      Authorization: AUTH
     }
   };
   const query = new URLSearchParams({
